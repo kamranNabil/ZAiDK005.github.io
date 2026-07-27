@@ -28,7 +28,7 @@ jobs:
       - name: Fetch live notice counts
         run: python .github/scripts/update_notices.py
 
-      - name: Commit updated notices.json
+      - - name: Commit updated notices.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
